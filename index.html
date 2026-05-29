@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compassion Program | Nurturing Kindness & Climate Awareness</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Confetti Canvas for Badge Interactions -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Floating Navigation Bar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-heart-pulse logo-icon"></i>
+                <span>Compassion In Action</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#why-this" class="nav-link">Why This?</a>
+                <a href="#philosophy" class="nav-link">Philosophy</a>
+                <a href="#highlights" class="nav-link">Highlights</a>
+                <a href="#format" class="nav-link">Format</a>
+                <a href="#modules" class="nav-link">Modules</a>
+            </nav>
+            <a href="#enroll" class="btn btn-primary nav-btn">Enroll School</a>
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <div class="presenter-logos">
+                    <span class="presented-by-text">Presented by</span>
+                    <div class="logo-group">
+                        <img src="images/logo_prism.png" alt="Prism India Events" class="partner-logo logo-prism">
+                        <span class="logo-x">&times;</span>
+                        <img src="images/logo_simba.jpg" alt="Simba Animal Save" class="partner-logo logo-simba">
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    Compassion <span class="gradient-text">Education</span> Program
+                </h1>
+                <p class="hero-subtitle">
+                    Compassion &bull; Climate Awareness &bull; Conscious Living
+                </p>
+                <p class="hero-description">
+                    Empowering the next generation with the emotional intelligence, environmental responsibility, and empathy needed to build a kinder, more sustainable world.
+                </p>
+                <div class="hero-actions">
+                    <a href="#modules" class="btn btn-primary btn-large">Explore 6-Month Pilot</a>
+                    <a href="#why-this" class="btn btn-secondary btn-large">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image-container reveal delay-1">
+                <div class="hero-image-card">
+                    <img src="images/hero_compassion.png" alt="Children and animals in a peaceful outdoor setting" class="hero-img">
+                    <div class="floating-badge badge-top">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>SDGs Aligned</span>
+                    </div>
+                    <div class="floating-badge badge-bottom">
+                        <i class="fa-solid fa-shield-cat"></i>
+                        <span>Empathy First</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why This Program Section -->
+    <section id="why-this" class="section why-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Why This Program?</h2>
+                <div class="title-underline"></div>
+                <p class="section-tagline">Addressing the real challenges children face in today's fast-paced world.</p>
+            </div>
+            
+            <div class="grid grid-2 why-grid">
+                <!-- Challenges Card Group -->
+                <div class="why-card-group challenges reveal">
+                    <h3 class="group-title"><i class="fa-solid fa-triangle-exclamation"></i> Today's Children Face</h3>
+                    <ul class="why-list">
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-cloud-rain"></i></div>
+                            <div class="list-text">
+                                <strong>Climate Anxiety</strong>
+                                <span>Feeling overwhelmed by environmental issues without knowing how to help.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-unlink"></i></div>
+                            <div class="list-text">
+                                <strong>Emotional Disconnect</strong>
+                                <span>Struggling to read emotional cues in animals, nature, and peers.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div class="list-text">
+                                <strong>Digital Dependency</strong>
+                                <span>Spending hours behind screens instead of exploring the physical world.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-burst"></i></div>
+                            <div class="list-text">
+                                <strong>Rising Aggression</strong>
+                                <span>Increasing behavioral stress and lack of constructive emotional outlets.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-trash-can"></i></div>
+                            <div class="list-text">
+                                <strong>Poor Eco-Awareness</strong>
+                                <span>A lack of daily recycling habits, waste consciousness, and sustainability.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-cookie"></i></div>
+                            <div class="list-text">
+                                <strong>Unhealthy Food Habits</strong>
+                                <span>Disconnected from the environmental and physical impact of what they eat.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Solutions Card Group -->
+                <div class="why-card-group solutions reveal delay-1">
+                    <h3 class="group-title"><i class="fa-solid fa-seedling"></i> We Help Schools Nurture</h3>
+                    <ul class="why-list">
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-crown"></i></div>
+                            <div class="list-text">
+                                <strong>Compassionate Leadership</strong>
+                                <span>Inspiring kids to stand up for the vulnerable and lead initiatives.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="list-text">
+                                <strong>Emotional Intelligence</strong>
+                                <span>Nurturing self-awareness, empathy, and active listening skills.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                            <div class="list-text">
+                                <strong>Environmental Responsibility</strong>
+                                <span>Equipping students with green practices and sustainable mindsets.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-carrot"></i></div>
+                            <div class="list-text">
+                                <strong>Conscious Food Awareness</strong>
+                                <span>Teaching nutritional choices and how food systems affect our planet.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-users"></i></div>
+                            <div class="list-text">
+                                <strong>Civic Sensitivity</strong>
+                                <span>Encouraging kids to be active, supportive members of their local communities.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <div class="list-text">
+                                <strong>Resilience & Kindness</strong>
+                                <span>Instilling core values of kindness, patience, and mental strength.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Philosophy Section -->
+    <section id="philosophy" class="section philosophy-section">
+        <div class="container text-center">
+            <div class="philosophy-quote-card reveal">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <blockquote class="philosophy-quote">
+                    "Children who learn compassion toward animals and nature become kinder, healthier, more responsible human beings."
+                </blockquote>
+                <div class="title-underline margin-auto"></div>
+            </div>
+
+            <div class="philosophy-details reveal delay-1">
+                <h3 class="sub-heading">Aligned with Global Standards</h3>
+                <p class="description-text">Our curriculum does not live in isolation. It is carefully mapped to meet modern holistic education framework requirements:</p>
+                
+                <div class="framework-grid">
+                    <div class="framework-card">
+                        <div class="f-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>IB Learner Profile</h4>
+                        <p>Nurturing caring, principled, and reflective thinkers who act to make a difference.</p>
+                    </div>
+                    <div class="framework-card">
+                        <div class="f-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h4>UN SDGs</h4>
+                        <p>Direct support of Goal 4 (Quality Education), Goal 12, 13, 14, and 15 (Climate action, Life on Land).</p>
+                    </div>
+                    <div class="framework-card">
+                        <div class="f-icon"><i class="fa-solid fa-hands-holding"></i></div>
+                        <h4>Experiential Education</h4>
+                        <p>Learning by doing, reflecting, and applying skills to real-life challenges.</p>
+                    </div>
+                    <div class="framework-card">
+                        <div class="f-icon"><i class="fa-solid fa-heart"></i></div>
+                        <h4>SEL (Social Emotional Learning)</h4>
+                        <p>Building relationship skills, social awareness, and responsible decision-making.</p>
+                    </div>
+                    <div class="framework-card">
+                        <div class="f-icon"><i class="fa-solid fa-wind"></i></div>
+                        <h4>Sustainability Education</h4>
+                        <p>Understanding climate change, resources, and zero-waste lifestyles.</p>
+                    </div>
+                    <div class="framework-card">
+                        <div class="f-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                        <h4>Life Skills</h4>
+                        <p>Developing emergency response, nutrition planning, and leadership confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Highlights Section -->
+    <section id="highlights" class="section highlights-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Program Highlights</h2>
+                <div class="title-underline"></div>
+                <p class="section-tagline">What students experience during this immersive educational journey.</p>
+            </div>
+
+            <div class="highlights-grid">
+                <!-- Card 1 -->
+                <div class="highlight-card reveal">
+                    <div class="card-bg-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-dog"></i></div>
+                        <h3>Compassion Education</h3>
+                        <p>Developing empathy by recognizing feelings in animals, learning core emotional scales, and promoting peaceful coexistence.</p>
+                        <ul class="card-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Understanding animal emotions</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Empathy building activities</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Responsible coexistence</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="highlight-card reveal delay-1">
+                    <div class="card-bg-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                        <h3>Climate Awareness</h3>
+                        <p>Simplifying complex climate issues for children and turning awareness into active green habits for everyday life.</p>
+                        <ul class="card-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Climate crisis simplified</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Waste & pollution awareness</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Sustainable living habits</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="highlight-card reveal delay-2">
+                    <div class="card-bg-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <h3>Plant-Based Awareness</h3>
+                        <p>Understanding how nutrition choices shape our health and environment through fun, creative plant-based workshops.</p>
+                        <ul class="card-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Conscious food choices</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Nutrition awareness</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Food systems impact</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Plant-based workshops</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="highlight-card reveal">
+                    <div class="card-bg-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                        <h3>Rescue & First Aid</h3>
+                        <p>Nurturing active emergency response capability. Students learn safe protocols for monsoon care and animal interaction.</p>
+                        <ul class="card-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Basic rescue response</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Monsoon animal care</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Safe animal interaction</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Emergency response</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="highlight-card reveal delay-1">
+                    <div class="card-bg-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+                        <h3>Outdoor & Community</h3>
+                        <p>Taking learning outside the classroom through shelter visits, conservation walks, and active neighborhood projects.</p>
+                        <ul class="card-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Shelter visits</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Nature and bird walks</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Bird feeding activities</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Community engagement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilot Format Section -->
+    <section id="format" class="section format-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">6-Month Pilot Program</h2>
+                <div class="title-underline"></div>
+                <p class="section-tagline">A structured, immersive layout designed for effortless integration into school schedules.</p>
+            </div>
+
+            <div class="format-grid reveal">
+                <div class="format-card">
+                    <i class="fa-solid fa-calendar-days f-card-icon"></i>
+                    <h3>Duration</h3>
+                    <p class="format-stat">6 Months</p>
+                    <p>Comprehensive step-by-step progress</p>
+                </div>
+                <div class="format-card">
+                    <i class="fa-solid fa-children f-card-icon"></i>
+                    <h3>Recommended Grades</h3>
+                    <p class="format-stat">Grade 4 – 9</p>
+                    <p>Age-appropriate interactive curriculum</p>
+                </div>
+                <div class="format-card">
+                    <i class="fa-solid fa-users f-card-icon"></i>
+                    <h3>Student Capacity</h3>
+                    <p class="format-stat">Max 50</p>
+                    <p>Students per pilot batch</p>
+                </div>
+                <div class="format-card">
+                    <i class="fa-solid fa-arrows-spin f-card-icon"></i>
+                    <h3>Frequency</h3>
+                    <p class="format-stat">4 Sessions</p>
+                    <p>Held weekly for steady learning</p>
+                </div>
+                <div class="format-card">
+                    <i class="fa-solid fa-layer-group f-card-icon"></i>
+                    <h3>Total Sessions</h3>
+                    <p class="format-stat">24 Sessions</p>
+                    <p>Full curriculum duration</p>
+                </div>
+                <div class="format-card">
+                    <i class="fa-solid fa-clock f-card-icon"></i>
+                    <h3>Session Duration</h3>
+                    <p class="format-stat">60 Min</p>
+                    <p>Packed with hands-on activities</p>
+                </div>
+                <div class="format-card full-width-card">
+                    <i class="fa-solid fa-award f-card-icon"></i>
+                    <div>
+                        <h3>Additional Experiences & Final Recognition</h3>
+                        <p>Includes optional weekend field trips & competitions. Students who complete the pilot earn the prestigious <strong>Compassion Leadership Certificate</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monthly Modules Section -->
+    <section id="modules" class="section modules-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Program Modules</h2>
+                <div class="title-underline"></div>
+                <p class="section-tagline">Click on a month to explore the interactive journey and view the reward badges!</p>
+            </div>
+
+            <!-- Month Selection Tabs -->
+            <div class="timeline-tabs reveal">
+                <button class="tab-btn active" data-month="1">
+                    <span class="tab-num">M1</span>
+                    <span class="tab-label">Kindness</span>
+                </button>
+                <button class="tab-btn" data-month="2">
+                    <span class="tab-num">M2</span>
+                    <span class="tab-label">Earth</span>
+                </button>
+                <button class="tab-btn" data-month="3">
+                    <span class="tab-num">M3</span>
+                    <span class="tab-label">Food</span>
+                </button>
+                <button class="tab-btn" data-month="4">
+                    <span class="tab-num">M4</span>
+                    <span class="tab-label">Rescue</span>
+                </button>
+                <button class="tab-btn" data-month="5">
+                    <span class="tab-num">M5</span>
+                    <span class="tab-label">Community</span>
+                </button>
+                <button class="tab-btn" data-month="6">
+                    <span class="tab-num">M6</span>
+                    <span class="tab-label">Showcase</span>
+                </button>
+            </div>
+
+            <!-- Modules Content Box -->
+            <div class="modules-display reveal">
+                
+                <!-- Month 1 (Kindness & Empathy) -->
+                <div class="module-content active" id="module-1">
+                    <div class="module-info">
+                        <span class="module-month-badge">Month 1</span>
+                        <h3 class="module-title">Kindness & Empathy</h3>
+                        <p class="module-desc">Nurturing children's emotional core. We begin by helping students read and understand emotions in animals, setting a solid foundation for active emotional intelligence and empathy.</p>
+                        
+                        <div class="module-activities">
+                            <h4><i class="fa-solid fa-list-check"></i> Core Activities</h4>
+                            <ul>
+                                <li>Understanding emotional states and expressions in animals</li>
+                                <li>Compassion circle activities to build trust and peer empathy</li>
+                                <li>Interactive storytelling and roleplay scenarios</li>
+                            </ul>
+                        </div>
+
+                        <div class="badge-reward-section">
+                            <h4><i class="fa-solid fa-medal"></i> Earnable Reward Badge</h4>
+                            <div class="badge-card clickable" onclick="triggerConfetti('Kindness Champion')">
+                                <div class="badge-circle kindness">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                </div>
+                                <div class="badge-info">
+                                    <h5>"Kindness Champion"</h5>
+                                    <p>Tap to unlock & celebrate!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-media">
+                        <img src="images/month1_empathy.png" alt="Month 1 Kindness illustration" class="module-img">
+                    </div>
+                </div>
+
+                <!-- Month 2 (Climate & Earth) -->
+                <div class="module-content" id="module-2">
+                    <div class="module-info">
+                        <span class="module-month-badge">Month 2</span>
+                        <h3 class="module-title">Climate & Earth</h3>
+                        <p class="module-desc">Simplifying the climate crisis for children, focusing on plastic, waste management, and practical sustainability habits that make environmental protection relatable and fun.</p>
+                        
+                        <div class="module-activities">
+                            <h4><i class="fa-solid fa-list-check"></i> Core Activities</h4>
+                            <ul>
+                                <li>Climate crisis explained simply through visual storytelling</li>
+                                <li>Plastic reduction and waste sorting awareness challenges</li>
+                                <li>Interactive sustainability games and eco-quizzes</li>
+                            </ul>
+                            <div class="special-activity">
+                                <strong>Featured Activity:</strong> School Awareness and recycling clothes and plastic
+                            </div>
+                        </div>
+
+                        <div class="badge-reward-section">
+                            <h4><i class="fa-solid fa-medal"></i> Earnable Reward Badge</h4>
+                            <div class="badge-card clickable" onclick="triggerConfetti('Climate Healers Certificate')">
+                                <div class="badge-circle earth">
+                                    <i class="fa-solid fa-earth-africa"></i>
+                                </div>
+                                <div class="badge-info">
+                                    <h5>"Certificate from Climate Healers"</h5>
+                                    <p>Tap to unlock & celebrate!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-media">
+                        <img src="images/month2_earth.png" alt="Month 2 Climate illustration" class="module-img">
+                    </div>
+                </div>
+
+                <!-- Month 3 (Food & Conscious Living) -->
+                <div class="module-content" id="module-3">
+                    <div class="module-info">
+                        <span class="module-month-badge">Month 3</span>
+                        <h3 class="module-title">Food & Conscious Living</h3>
+                        <p class="module-desc">Introducing children to the impact of food on the earth. Students explore plant-based benefits, healthy food choices, and compassionate, low-carbon food systems.</p>
+                        
+                        <div class="module-activities">
+                            <h4><i class="fa-solid fa-list-check"></i> Core Activities</h4>
+                            <ul>
+                                <li>Plant-based awareness and environmental impact of food systems</li>
+                                <li>Understanding nutritional benefits of organic, natural items</li>
+                                <li>Exploring alternative protein and conscious food systems</li>
+                            </ul>
+                            <div class="special-activity">
+                                <strong>Featured Activity:</strong> Plant-based snack challenge
+                            </div>
+                        </div>
+
+                        <div class="badge-reward-section">
+                            <h4><i class="fa-solid fa-medal"></i> Earnable Reward Badge</h4>
+                            <div class="badge-card clickable" onclick="triggerConfetti('Dorabjees Food Coupons')">
+                                <div class="badge-circle food">
+                                    <i class="fa-solid fa-carrot"></i>
+                                </div>
+                                <div class="badge-info">
+                                    <h5>"Food Coupons from Dorabjees"</h5>
+                                    <p>Tap to unlock & celebrate!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-media">
+                        <img src="images/month3_food.png" alt="Month 3 Food illustration" class="module-img">
+                    </div>
+                </div>
+
+                <!-- Month 4 (Rescue & First Aid) -->
+                <div class="module-content" id="module-4">
+                    <div class="module-info">
+                        <span class="module-month-badge">Month 4</span>
+                        <h3 class="module-title">Rescue & First Aid</h3>
+                        <p class="module-desc">Empowering children with safe, structured ways to react when an animal or bird is in distress. Special focus is given to emergency response and monsoon care protocols.</p>
+                        
+                        <div class="module-activities">
+                            <h4><i class="fa-solid fa-list-check"></i> Core Activities</h4>
+                            <ul>
+                                <li>Monsoon rescue awareness and safety during heavy rain seasons</li>
+                                <li>Feeding strays responsibly and checking welfare</li>
+                                <li>Helping injured birds/animals safely and emergency response</li>
+                            </ul>
+                            <div class="special-activity">
+                                <strong>Featured Activity:</strong> Junior Rescue Drill
+                            </div>
+                        </div>
+
+                        <div class="badge-reward-section">
+                            <h4><i class="fa-solid fa-medal"></i> Earnable Reward Badge</h4>
+                            <div class="badge-card clickable" onclick="triggerConfetti('Junior Animal Rescuer Cap')">
+                                <div class="badge-circle rescue">
+                                    <i class="fa-solid fa-kit-medical"></i>
+                                </div>
+                                <div class="badge-info">
+                                    <h5>"Junior Animal Rescuer Cap"</h5>
+                                    <p>Tap to unlock & celebrate!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-media">
+                        <img src="images/month4_rescue.png" alt="Month 4 Rescue illustration" class="module-img">
+                    </div>
+                </div>
+
+                <!-- Month 5 (Community Impact) -->
+                <div class="module-content" id="module-5">
+                    <div class="module-info">
+                        <span class="module-month-badge">Month 5</span>
+                        <h3 class="module-title">Community Impact</h3>
+                        <p class="module-desc">Taking classroom lessons out into the community. Students participate in building localized projects that support the local wildlife and increase neighborhood awareness.</p>
+                        
+                        <div class="module-activities">
+                            <h4><i class="fa-solid fa-list-check"></i> Core Activities</h4>
+                            <ul>
+                                <li>Potluck in the school - plant based food</li>
+                                <li>Creating and placing bird feeders in safe public spaces</li>
+                                <li>Organizing water bowl drives for strays in housing societies</li>
+                                <li>Launching community/society compassion awareness campaigns</li>
+                            </ul>
+                        </div>
+
+                        <div class="badge-reward-section">
+                            <h4><i class="fa-solid fa-medal"></i> Earnable Reward Badge</h4>
+                            <div class="badge-card clickable" onclick="triggerConfetti('Community Changemaker')">
+                                <div class="badge-circle community">
+                                    <i class="fa-solid fa-users-gear"></i>
+                                </div>
+                                <div class="badge-info">
+                                    <h5>"Community Changemaker"</h5>
+                                    <p>Tap to unlock & celebrate!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-media">
+                        <img src="images/month5_community.png" alt="Month 5 Community illustration" class="module-img">
+                    </div>
+                </div>
+
+                <!-- Month 6 (Leadership & Showcase) -->
+                <div class="module-content" id="module-6">
+                    <div class="module-info">
+                        <span class="module-month-badge">Month 6</span>
+                        <h3 class="module-title">Leadership & Showcase</h3>
+                        <p class="module-desc">The grand culmination. Students present their final projects, reflecting on their 6-month growth. We celebrate accomplishments alongside schools, parents, and community members.</p>
+                        
+                        <div class="module-activities">
+                            <h4><i class="fa-solid fa-list-check"></i> Core Activities</h4>
+                            <ul>
+                                <li>Student showcases and individual/group project presentations</li>
+                                <li>Grand awards ceremony honoring young compassionate leaders</li>
+                                <li>Parent Engagement Day to build permanent supportive habits</li>
+                            </ul>
+                            <div class="special-activity">
+                                <strong>Final Recognition:</strong> Compassion Leadership Certificate
+                            </div>
+                        </div>
+
+                        <div class="badge-reward-section">
+                            <h4><i class="fa-solid fa-award"></i> Final Recognition</h4>
+                            <div class="badge-card clickable" onclick="triggerConfetti('Compassion Leadership Graduate')">
+                                <div class="badge-circle leadership">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="badge-info">
+                                    <h5>Compassion Leadership Certificate</h5>
+                                    <p>Tap to celebrate graduation!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-media">
+                        <img src="images/month6_leadership.png" alt="Month 6 Showcase illustration" class="module-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Card Deck Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="highlight-tag">Program Album</span>
+                <h2 class="section-title">Compassion In Action Gallery</h2>
+                <div class="title-underline margin-auto"></div>
+                <p class="section-tagline">Explore our school programs and events through our interactive 3D card deck!</p>
+            </div>
+            
+            <div class="deck-wrapper reveal">
+                <!-- Navigation Arrow Left -->
+                <button class="deck-nav-btn prev-btn" aria-label="Previous image">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
+                <!-- 3D Card Deck Container -->
+                <div class="deck-container">
+                    
+                    <!-- Card 1 -->
+                    <div class="deck-card active">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery1.jpg" alt="Animal Rights Lessons">
+                            </div>
+                            <div class="card-info">
+                                <h3>1. Animal Rights Lessons</h3>
+                                <p>Teaching the 5 fundamental freedoms of animal welfare in classrooms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery2.jpg" alt="Empathy Circle">
+                            </div>
+                            <div class="card-info">
+                                <h3>2. Empathy Circle</h3>
+                                <p>Students pledge support for active compassion by forming interactive circles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery3.jpg" alt="Joint Campaigns">
+                            </div>
+                            <div class="card-info">
+                                <h3>3. Joint Campaigns</h3>
+                                <p>Partnering to spread school-wide and community animal safety awareness.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery4.jpg" alt="Farm Shelter Visits">
+                            </div>
+                            <div class="card-info">
+                                <h3>4. Farm Shelter Visits</h3>
+                                <p>First-hand outdoor learning experiences visiting rescued calves and animals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 5 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery5.jpg" alt="Rescue Demonstrations">
+                            </div>
+                            <div class="card-info">
+                                <h3>5. Rescue Demonstrations</h3>
+                                <p>Practical interaction skills to handle and approach community animals safely.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery6.jpg" alt="Art for Compassion">
+                            </div>
+                            <div class="card-info">
+                                <h3>6. Art for Compassion</h3>
+                                <p>Students expressing kindness ideas through drawings and creative poster work.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery7.jpg" alt="Zoochosis Awareness">
+                            </div>
+                            <div class="card-info">
+                                <h3>7. Zoochosis Awareness</h3>
+                                <p>Students giving presentations on stereotypic behaviors in captive animals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery8.jpg" alt="Environmental Plays">
+                            </div>
+                            <div class="card-info">
+                                <h3>8. Environmental Plays</h3>
+                                <p>School children using props to narrate water conservation and forest protection plays.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="deck-card">
+                        <div class="card-inner">
+                            <div class="card-image">
+                                <img src="images/gallery9.jpg" alt="Animal Testing Education">
+                            </div>
+                            <div class="card-info">
+                                <h3>9. Animal Testing Education</h3>
+                                <p>Helping students understand the realities of animal testing in laboratories.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Navigation Arrow Right -->
+                <button class="deck-nav-btn next-btn" aria-label="Next image">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Pagination Indicator Dots -->
+            <div class="deck-dots"></div>
+        </div>
+    </section>
+
+    <!-- Program Models Section -->
+    <section id="pricing-models" class="section models-pricing-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Program Models</h2>
+                <div class="title-underline margin-auto"></div>
+                <p class="section-tagline">Select the best engagement model for your school's educational goals.</p>
+            </div>
+
+            <div class="pricing-grid reveal">
+                <!-- Basic Model -->
+                <div class="pricing-card">
+                    <div class="card-tier">Basic Model</div>
+                    <div class="card-duration">For 6 Months</div>
+                    <div class="card-price">On Request</div>
+                    <div class="title-underline margin-auto"></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-circle-check"></i> 12 Sessions</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Digital Certificates</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Basic Activities</li>
+                    </ul>
+                    <a href="#enroll" class="btn btn-secondary btn-block">Inquire Now</a>
+                </div>
+
+                <!-- Standard Model -->
+                <div class="pricing-card featured">
+                    <div class="card-badge-popular">Recommended</div>
+                    <div class="card-tier">Standard Model</div>
+                    <div class="card-duration">For 6 Months</div>
+                    <div class="card-price">On Request</div>
+                    <div class="title-underline margin-auto"></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-circle-check"></i> 24 Sessions / Workshops</li>
+                        <li><i class="fa-solid fa-circle-check"></i> School Competitions</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Physical Badges</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Activity Materials</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Showcase Event</li>
+                    </ul>
+                    <a href="#enroll" class="btn btn-primary btn-block">Inquire Now</a>
+                </div>
+
+                <!-- Premium Model -->
+                <div class="pricing-card">
+                    <div class="card-tier">Premium Model</div>
+                    <div class="card-duration">For 6 Months</div>
+                    <div class="card-price">On Request</div>
+                    <div class="title-underline margin-auto"></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Field Visits (Max 2)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Merchandise (T-shirts & Caps)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Professional Rescue Demos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Parent Engagement Events</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Inter-school Showcase</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Media Coverage</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Sustainability Carnival</li>
+                    </ul>
+                    <a href="#enroll" class="btn btn-secondary btn-block">Inquire Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Monsoon-Friendly Activities (Pune Special) -->
+    <section id="monsoon-activities" class="section monsoon-section">
+        <div class="monsoon-watermark"><i class="fa-solid fa-cloud-showers-water"></i></div>
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="highlight-tag">Pune Special Edition</span>
+                <h2 class="section-title text-white">Monsoon-Friendly Activities</h2>
+                <div class="title-underline margin-auto"></div>
+                <p class="section-tagline text-white-opacity">Keeping compassion and sustainability active during Pune's heavy rains with adaptive indoor and outdoor projects.</p>
+            </div>
+
+            <div class="grid grid-2 monsoon-grid reveal">
+                <!-- Indoor Card -->
+                <div class="monsoon-card indoor">
+                    <div class="monsoon-card-header">
+                        <i class="fa-solid fa-house-chimney-user"></i>
+                        <h3>Indoor Sessions</h3>
+                    </div>
+                    <p class="monsoon-card-desc">Interactive learning modules designed to run in classrooms, auditoriums, or playrooms when it is pouring outside.</p>
+                    <ul class="monsoon-list">
+                        <li>
+                            <i class="fa-solid fa-circle-play"></i>
+                            <div>
+                                <strong>Compassion Games</strong>
+                                <span>Empathy-building board games and teamwork activities.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-computer"></i>
+                            <div>
+                                <strong>Climate Simulations</strong>
+                                <span>Simple visual projections and interactive climate cards.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-comments"></i>
+                            <div>
+                                <strong>Storytelling Circles</strong>
+                                <span>Inspiring narratives of famous animal rescues and environmental heroes.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-people-harvester"></i>
+                            <div>
+                                <strong>Rescue Role-Play</strong>
+                                <span>Safe steps and dialogue games to practice emergency scenarios.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <div>
+                                <strong>Sustainability Quizzes</strong>
+                                <span>Gamified trivia sessions testing recycling and eco-friendly habits.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Outdoor Card -->
+                <div class="monsoon-card outdoor">
+                    <div class="monsoon-card-header">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                        <h3>Outdoor Campaigns</h3>
+                    </div>
+                    <p class="monsoon-card-desc">Hands-on outdoor projects for light-drizzle days or society-based campaigns that support local animal life.</p>
+                    <ul class="monsoon-list">
+                        <li>
+                            <i class="fa-solid fa-umbrella"></i>
+                            <div>
+                                <strong>Rain Shelter Building</strong>
+                                <span>Constructing water-resistant shelters for community dogs and cats.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-tree"></i>
+                            <div>
+                                <strong>Bird Feeder Installations</strong>
+                                <span>Hanging protected feeders that shelter seeds from heavy rainfall.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <div>
+                                <strong>Monsoon Rescue Awareness Drives</strong>
+                                <span>Spreading local awareness on safe monsoon practices for animals.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-droplet"></i>
+                            <div>
+                                <strong>Water Bowl Campaigns</strong>
+                                <span>Placing durable, fresh-water bowls in sheltered community spots.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration / Contact Section -->
+    <section id="enroll" class="section enroll-section">
+        <div class="container enroll-centered-container">
+            <div class="enroll-info reveal">
+                <span class="highlight-tag text-white">Get Involved</span>
+                <h2>Bring the Compassion Program to Your School</h2>
+                <p>Nurture a generation of compassionate, environmentally responsible, and resilient leaders. Partner with Simba Animal Save and Prism India Events to launch the 6-Month Pilot Program at your campus.</p>
+                
+                <div class="enroll-partners-row">
+                    <img src="images/logo_prism.png" alt="Prism India Events" class="enroll-partner-logo">
+                    <img src="images/logo_simba.jpg" alt="Simba Animal Save" class="enroll-partner-logo logo-simba-round">
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item card-style">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div>
+                            <h4>Program Coordinator</h4>
+                            <p><strong>Divya Rawat</strong><br><small style="color: rgba(255,255,255,0.7)">Compassion • Sustainability • Experiential Education</small></p>
+                        </div>
+                    </div>
+                    <div class="contact-item card-style">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Contact Number</h4>
+                            <p>+91 9619512107</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card-style">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email Inquiries</h4>
+                            <p>prismindiaevents@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <i class="fa-solid fa-heart-pulse logo-icon"></i>
+                    <span>Compassion In Action</span>
+                </a>
+                <p>Nurturing compassionate leaders, climate-aware thinkers, and conscious citizens through immersive experiential learning.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="#why-this">Why Compassion?</a>
+                <a href="#philosophy">Our Philosophy</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#format">Pilot Format</a>
+                <a href="#modules">Program Modules</a>
+            </div>
+            <div class="footer-collab">
+                <h4>Presented by</h4>
+                <div class="footer-logo-row">
+                    <img src="images/logo_prism.png" alt="Prism India Events" class="footer-logo logo-prism-light">
+                    <img src="images/logo_simba.jpg" alt="Simba Animal Save" class="footer-logo logo-simba-round">
+                </div>
+                <p class="margin-top-15"><strong>Prism India Events</strong> & <strong>Simba Animal Save</strong> are partnering to organize youth programs, rescue Stray animals, Advocate Veganism and educate communities.</p>
+                <p class="margin-top-10" style="font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.4;">
+                    <strong>Divya Rawat</strong> (Coordinator)<br>
+                    Compassion • Sustainability • Experiential Education<br>
+                    Contact No: +91 9619512107
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Compassion Program. All Rights Reserved. Built with care for a kinder world.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/divyahichikuhai/reels/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@chikukivines2024" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
