@@ -2112,62 +2112,30 @@ h1, h2, h3, h4, h5, h6 {
     cursor: grabbing;
 }
 
-/* Hover shadow effects on top card */
-.deck-card.active-card:hover .card-inner {
-    box-shadow: 0 35px 70px rgba(11, 106, 71, 0.15);
+/* Active card allows hover and interactions */
+.deck-card.active-card {
+    pointer-events: auto;
+    cursor: grab;
 }
 
-/* Card inner structure - Polaroid style */
-.card-inner {
-    width: 100%;
-    height: 100%;
-    padding: 16px 16px 45px 16px;
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    border: 1px solid rgba(11, 106, 71, 0.08);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.08), 0 5px 15px rgba(0,0,0,0.04);
-    transition: box-shadow 0.3s ease;
+.deck-card.active-card:active {
+    cursor: grabbing;
 }
 
-.card-image {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    border-radius: calc(var(--radius-lg) - 6px);
-}
-
-.card-image img {
+/* Card Image styling directly on deck-card img */
+.deck-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(11, 106, 71, 0.08);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.08), 0 5px 15px rgba(0,0,0,0.04);
+    transition: box-shadow 0.3s ease;
 }
 
-.card-info {
-    margin-top: 18px;
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card-info h3 {
-    font-size: 1.35rem;
-    color: var(--color-primary-dark);
-    margin-bottom: 6px;
-    font-family: 'Outfit', sans-serif;
-}
-
-.card-info p {
-    font-size: 0.9rem;
-    color: var(--text-medium);
-    line-height: 1.45;
-    margin: 0;
-    padding: 0 10px;
+.deck-card.active-card:hover img {
+    box-shadow: 0 35px 70px rgba(11, 106, 71, 0.15);
 }
 
 /* Swiping out animation */
@@ -2248,18 +2216,6 @@ h1, h2, h3, h4, h5, h6 {
         height: 500px;
     }
     
-    .card-image {
-        height: 340px;
-    }
-    
-    .card-info h3 {
-        font-size: 1.2rem;
-    }
-    
-    .card-info p {
-        font-size: 0.85rem;
-    }
-    
     .deck-nav-btn {
         width: 50px;
         height: 50px;
@@ -2278,29 +2234,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .deck-container {
         width: 100%;
-        height: 430px;
-    }
-    
-    .card-inner {
-        padding: 12px 12px 35px 12px;
-    }
-    
-    .card-image {
-        height: 290px;
-    }
-    
-    .card-info {
-        margin-top: 12px;
-    }
-    
-    .card-info h3 {
-        font-size: 1.1rem;
-        margin-bottom: 4px;
-    }
-    
-    .card-info p {
-        font-size: 0.78rem;
-        padding: 0 5px;
+        height: 400px;
     }
     
     .deck-nav-btn {
@@ -2355,10 +2289,7 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 250px;
     }
     .deck-container {
-        height: 385px;
-    }
-    .card-image {
-        height: 250px;
+        height: 350px;
     }
     .prev-btn {
         left: -18px;
