@@ -19,29 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.querySelector('.nav-menu');
 
     mobileMenuBtn.addEventListener('click', () => {
-        if (navMenu.style.display === 'flex') {
-            navMenu.style.display = 'none';
-        } else {
-            navMenu.style.display = 'flex';
-            navMenu.style.flexDirection = 'column';
-            navMenu.style.position = 'absolute';
-            navMenu.style.top = '100%';
-            navMenu.style.left = '0';
-            navMenu.style.width = '100%';
-            navMenu.style.background = 'rgba(250, 249, 246, 0.98)';
-            navMenu.style.padding = '20px';
-            navMenu.style.borderBottom = '1px solid rgba(11, 106, 71, 0.1)';
-            navMenu.style.boxShadow = '0 10px 15px rgba(0,0,0,0.05)';
-        }
+        navMenu.classList.toggle('active');
     });
 
     // Close mobile menu on nav link click
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
-                navMenu.style.display = 'none';
-            }
+            navMenu.classList.remove('active');
         });
     });
 
