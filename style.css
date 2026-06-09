@@ -1735,21 +1735,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-}
-
-.pricing-card.featured {
     background: var(--color-white);
-    border: 2px solid var(--color-primary);
-    box-shadow: var(--shadow-md);
-    transform: scale(1.03);
+    border: 1px solid var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-10px) scale(1.03);
     z-index: 2;
 }
 
-.pricing-card.featured:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: var(--shadow-lg);
+.pricing-card:hover .btn-secondary {
+    background: var(--grad-primary);
+    color: var(--color-white);
+    border-color: transparent;
+    box-shadow: 0 8px 25px rgba(11, 106, 71, 0.35);
 }
 
 .card-badge-popular {
@@ -1982,10 +1979,7 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    .pricing-card.featured {
-        transform: scale(1);
-    }
-    .pricing-card.featured:hover {
+    .pricing-card:hover {
         transform: translateY(-10px);
     }
     .exclusive-callout {
