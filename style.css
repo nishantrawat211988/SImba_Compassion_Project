@@ -65,6 +65,30 @@ body {
     overflow-x: hidden;
 }
 
+/* Watermark Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/logo_simba_watermark.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 400px auto;
+    opacity: 0.025; /* Subtle watermark opacity */
+    pointer-events: none;
+    z-index: 9999;
+}
+
+@media (max-width: 768px) {
+    body::before {
+        background-size: 250px auto;
+        opacity: 0.02;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
@@ -2282,6 +2306,9 @@ h1, h2, h3, h4, h5, h6 {
     .logo-x {
         font-size: 1.2rem;
     }
+    .logo span {
+        font-size: 1.05rem;
+    }
 }
 
 @media (max-width: 360px) {
@@ -2296,6 +2323,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .next-btn {
         right: -18px;
+    }
+    .logo span {
+        font-size: 0.85rem;
     }
 }
 
